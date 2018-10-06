@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="10月4号1. 数组中的重复数字​    题目描述：在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。  ​    解答： 1. 12345678910111213141516171">
+<meta name="description" content="10月4号1. 数组中的重复数字">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《剑指Offer》刷题">
 <meta property="og:url" content="http://yoursite.com/2018/10/05/《剑指Offer》刷题记/index.html">
 <meta property="og:site_name" content="HuSen">
-<meta property="og:description" content="10月4号1. 数组中的重复数字​    题目描述：在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。  ​    解答： 1. 12345678910111213141516171">
+<meta property="og:description" content="10月4号1. 数组中的重复数字">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-06T06:06:50.710Z">
+<meta property="og:updated_time" content="2018-10-06T06:10:13.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《剑指Offer》刷题">
-<meta name="twitter:description" content="10月4号1. 数组中的重复数字​    题目描述：在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。  ​    解答： 1. 12345678910111213141516171">
+<meta name="twitter:description" content="10月4号1. 数组中的重复数字">
 
 
 
@@ -138,7 +138,7 @@
 
 
 </head>
-undefined
+
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
@@ -448,8 +448,8 @@ undefined
       
 
       
-        <a id="more"></a>
-<h2 id="10月4号"><a href="#10月4号" class="headerlink" title="10月4号"></a>10月4号</h2><h3 id="1-数组中的重复数字"><a href="#1-数组中的重复数字" class="headerlink" title="1. 数组中的重复数字"></a>1. 数组中的重复数字</h3><p>​    <strong>题目描述：</strong>在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。 </p>
+        <h2 id="10月4号"><a href="#10月4号" class="headerlink" title="10月4号"></a>10月4号</h2><h3 id="1-数组中的重复数字"><a href="#1-数组中的重复数字" class="headerlink" title="1. 数组中的重复数字"></a>1. 数组中的重复数字</h3><a id="more"></a> 
+<p>​    <strong>题目描述：</strong>在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。 </p>
 <p>​    <strong>解答：</strong></p>
 <p>1.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 时间复杂度：O(N)</span></span><br><span class="line"><span class="comment">* 空间复杂度：O(N)</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">duplicate</span><span class="params">(<span class="keyword">int</span> numbers[],<span class="keyword">int</span> length,<span class="keyword">int</span> [] duplication)</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">if</span>(numbers == <span class="keyword">null</span> || numbers.length == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        Set&lt;Integer&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(set.contains(numbers[i])) &#123;</span><br><span class="line">                duplication[<span class="number">0</span>] = numbers[i];</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                set.add(numbers[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -898,5 +898,6 @@ undefined
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+  undefined
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":"wanko","bottom":-30,"mobileShow":false,"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
